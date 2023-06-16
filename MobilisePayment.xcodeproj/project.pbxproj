@@ -1,0 +1,670 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4146220E2A3A556B00919DCC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4146220D2A3A556B00919DCC /* AppDelegate.swift */; };
+		414622102A3A556B00919DCC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4146220F2A3A556B00919DCC /* SceneDelegate.swift */; };
+		414622122A3A556B00919DCC /* PaymentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 414622112A3A556B00919DCC /* PaymentViewController.swift */; };
+		414622152A3A556B00919DCC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 414622132A3A556B00919DCC /* Main.storyboard */; };
+		414622172A3A556C00919DCC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 414622162A3A556C00919DCC /* Assets.xcassets */; };
+		4146221A2A3A556C00919DCC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 414622182A3A556C00919DCC /* LaunchScreen.storyboard */; };
+		414622252A3A556C00919DCC /* PaymentTextFieldTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 414622242A3A556C00919DCC /* PaymentTextFieldTests.swift */; };
+		4146222F2A3A556C00919DCC /* MobilisePaymentUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4146222E2A3A556C00919DCC /* MobilisePaymentUITests.swift */; };
+		414622312A3A556C00919DCC /* MobilisePaymentUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 414622302A3A556C00919DCC /* MobilisePaymentUITestsLaunchTests.swift */; };
+		4146223F2A3A55A800919DCC /* IQKeyboardManagerSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 4146223E2A3A55A800919DCC /* IQKeyboardManagerSwift */; };
+		414622412A3A569100919DCC /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 414622402A3A569100919DCC /* Extensions.swift */; };
+		414622442A3A578600919DCC /* PaymentTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 414622432A3A578600919DCC /* PaymentTextField.swift */; };
+		414622462A3A586200919DCC /* PaymentFieldType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 414622452A3A586200919DCC /* PaymentFieldType.swift */; };
+		41DA15BF2A3C9D630047C1FC /* PaymentViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41DA15BE2A3C9D630047C1FC /* PaymentViewControllerExtension.swift */; };
+		E29D7F842A3CC1540006C9E1 /* KeyboardNotifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = E29D7F832A3CC1540006C9E1 /* KeyboardNotifier.swift */; };
+		E29D7F862A3CC89F0006C9E1 /* PaymentViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E29D7F852A3CC89F0006C9E1 /* PaymentViewControllerTests.swift */; };
+		E2A03A142A3CA3AC00A0556A /* PaymentTransaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2A03A132A3CA3AC00A0556A /* PaymentTransaction.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		414622212A3A556C00919DCC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 414622022A3A556B00919DCC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 414622092A3A556B00919DCC;
+			remoteInfo = MobilisePayment;
+		};
+		4146222B2A3A556C00919DCC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 414622022A3A556B00919DCC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 414622092A3A556B00919DCC;
+			remoteInfo = MobilisePayment;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		4146220A2A3A556B00919DCC /* MobilisePayment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MobilisePayment.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4146220D2A3A556B00919DCC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		4146220F2A3A556B00919DCC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		414622112A3A556B00919DCC /* PaymentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentViewController.swift; sourceTree = "<group>"; };
+		414622142A3A556B00919DCC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		414622162A3A556C00919DCC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		414622192A3A556C00919DCC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		4146221B2A3A556C00919DCC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		414622202A3A556C00919DCC /* MobilisePaymentTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MobilisePaymentTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		414622242A3A556C00919DCC /* PaymentTextFieldTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentTextFieldTests.swift; sourceTree = "<group>"; };
+		4146222A2A3A556C00919DCC /* MobilisePaymentUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MobilisePaymentUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4146222E2A3A556C00919DCC /* MobilisePaymentUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MobilisePaymentUITests.swift; sourceTree = "<group>"; };
+		414622302A3A556C00919DCC /* MobilisePaymentUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MobilisePaymentUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		414622402A3A569100919DCC /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		414622432A3A578600919DCC /* PaymentTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentTextField.swift; sourceTree = "<group>"; };
+		414622452A3A586200919DCC /* PaymentFieldType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentFieldType.swift; sourceTree = "<group>"; };
+		41DA15BE2A3C9D630047C1FC /* PaymentViewControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentViewControllerExtension.swift; sourceTree = "<group>"; };
+		E29D7F832A3CC1540006C9E1 /* KeyboardNotifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardNotifier.swift; sourceTree = "<group>"; };
+		E29D7F852A3CC89F0006C9E1 /* PaymentViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentViewControllerTests.swift; sourceTree = "<group>"; };
+		E2A03A132A3CA3AC00A0556A /* PaymentTransaction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentTransaction.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		414622072A3A556B00919DCC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4146223F2A3A55A800919DCC /* IQKeyboardManagerSwift in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4146221D2A3A556C00919DCC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		414622272A3A556C00919DCC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		414622012A3A556B00919DCC = {
+			isa = PBXGroup;
+			children = (
+				4146220C2A3A556B00919DCC /* MobilisePayment */,
+				414622232A3A556C00919DCC /* MobilisePaymentTests */,
+				4146222D2A3A556C00919DCC /* MobilisePaymentUITests */,
+				4146220B2A3A556B00919DCC /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		4146220B2A3A556B00919DCC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4146220A2A3A556B00919DCC /* MobilisePayment.app */,
+				414622202A3A556C00919DCC /* MobilisePaymentTests.xctest */,
+				4146222A2A3A556C00919DCC /* MobilisePaymentUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4146220C2A3A556B00919DCC /* MobilisePayment */ = {
+			isa = PBXGroup;
+			children = (
+				4146220D2A3A556B00919DCC /* AppDelegate.swift */,
+				4146220F2A3A556B00919DCC /* SceneDelegate.swift */,
+				414622112A3A556B00919DCC /* PaymentViewController.swift */,
+				41DA15BE2A3C9D630047C1FC /* PaymentViewControllerExtension.swift */,
+				414622402A3A569100919DCC /* Extensions.swift */,
+				E29D7F832A3CC1540006C9E1 /* KeyboardNotifier.swift */,
+				414622422A3A56E400919DCC /* Model */,
+				414622132A3A556B00919DCC /* Main.storyboard */,
+				414622162A3A556C00919DCC /* Assets.xcassets */,
+				414622182A3A556C00919DCC /* LaunchScreen.storyboard */,
+				4146221B2A3A556C00919DCC /* Info.plist */,
+			);
+			path = MobilisePayment;
+			sourceTree = "<group>";
+		};
+		414622232A3A556C00919DCC /* MobilisePaymentTests */ = {
+			isa = PBXGroup;
+			children = (
+				414622242A3A556C00919DCC /* PaymentTextFieldTests.swift */,
+				E29D7F852A3CC89F0006C9E1 /* PaymentViewControllerTests.swift */,
+			);
+			path = MobilisePaymentTests;
+			sourceTree = "<group>";
+		};
+		4146222D2A3A556C00919DCC /* MobilisePaymentUITests */ = {
+			isa = PBXGroup;
+			children = (
+				4146222E2A3A556C00919DCC /* MobilisePaymentUITests.swift */,
+				414622302A3A556C00919DCC /* MobilisePaymentUITestsLaunchTests.swift */,
+			);
+			path = MobilisePaymentUITests;
+			sourceTree = "<group>";
+		};
+		414622422A3A56E400919DCC /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				414622432A3A578600919DCC /* PaymentTextField.swift */,
+				414622452A3A586200919DCC /* PaymentFieldType.swift */,
+				E2A03A132A3CA3AC00A0556A /* PaymentTransaction.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		414622092A3A556B00919DCC /* MobilisePayment */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 414622342A3A556C00919DCC /* Build configuration list for PBXNativeTarget "MobilisePayment" */;
+			buildPhases = (
+				414622062A3A556B00919DCC /* Sources */,
+				414622072A3A556B00919DCC /* Frameworks */,
+				414622082A3A556B00919DCC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MobilisePayment;
+			packageProductDependencies = (
+				4146223E2A3A55A800919DCC /* IQKeyboardManagerSwift */,
+			);
+			productName = MobilisePayment;
+			productReference = 4146220A2A3A556B00919DCC /* MobilisePayment.app */;
+			productType = "com.apple.product-type.application";
+		};
+		4146221F2A3A556C00919DCC /* MobilisePaymentTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 414622372A3A556C00919DCC /* Build configuration list for PBXNativeTarget "MobilisePaymentTests" */;
+			buildPhases = (
+				4146221C2A3A556C00919DCC /* Sources */,
+				4146221D2A3A556C00919DCC /* Frameworks */,
+				4146221E2A3A556C00919DCC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				414622222A3A556C00919DCC /* PBXTargetDependency */,
+			);
+			name = MobilisePaymentTests;
+			productName = MobilisePaymentTests;
+			productReference = 414622202A3A556C00919DCC /* MobilisePaymentTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		414622292A3A556C00919DCC /* MobilisePaymentUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4146223A2A3A556C00919DCC /* Build configuration list for PBXNativeTarget "MobilisePaymentUITests" */;
+			buildPhases = (
+				414622262A3A556C00919DCC /* Sources */,
+				414622272A3A556C00919DCC /* Frameworks */,
+				414622282A3A556C00919DCC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4146222C2A3A556C00919DCC /* PBXTargetDependency */,
+			);
+			name = MobilisePaymentUITests;
+			productName = MobilisePaymentUITests;
+			productReference = 4146222A2A3A556C00919DCC /* MobilisePaymentUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		414622022A3A556B00919DCC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1410;
+				LastUpgradeCheck = 1410;
+				TargetAttributes = {
+					414622092A3A556B00919DCC = {
+						CreatedOnToolsVersion = 14.1;
+					};
+					4146221F2A3A556C00919DCC = {
+						CreatedOnToolsVersion = 14.1;
+						TestTargetID = 414622092A3A556B00919DCC;
+					};
+					414622292A3A556C00919DCC = {
+						CreatedOnToolsVersion = 14.1;
+						TestTargetID = 414622092A3A556B00919DCC;
+					};
+				};
+			};
+			buildConfigurationList = 414622052A3A556B00919DCC /* Build configuration list for PBXProject "MobilisePayment" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 414622012A3A556B00919DCC;
+			packageReferences = (
+				4146223D2A3A55A800919DCC /* XCRemoteSwiftPackageReference "IQKeyboardManager" */,
+			);
+			productRefGroup = 4146220B2A3A556B00919DCC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				414622092A3A556B00919DCC /* MobilisePayment */,
+				4146221F2A3A556C00919DCC /* MobilisePaymentTests */,
+				414622292A3A556C00919DCC /* MobilisePaymentUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		414622082A3A556B00919DCC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4146221A2A3A556C00919DCC /* LaunchScreen.storyboard in Resources */,
+				414622172A3A556C00919DCC /* Assets.xcassets in Resources */,
+				414622152A3A556B00919DCC /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4146221E2A3A556C00919DCC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		414622282A3A556C00919DCC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		414622062A3A556B00919DCC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				414622462A3A586200919DCC /* PaymentFieldType.swift in Sources */,
+				414622442A3A578600919DCC /* PaymentTextField.swift in Sources */,
+				414622122A3A556B00919DCC /* PaymentViewController.swift in Sources */,
+				4146220E2A3A556B00919DCC /* AppDelegate.swift in Sources */,
+				E29D7F842A3CC1540006C9E1 /* KeyboardNotifier.swift in Sources */,
+				41DA15BF2A3C9D630047C1FC /* PaymentViewControllerExtension.swift in Sources */,
+				414622102A3A556B00919DCC /* SceneDelegate.swift in Sources */,
+				414622412A3A569100919DCC /* Extensions.swift in Sources */,
+				E2A03A142A3CA3AC00A0556A /* PaymentTransaction.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4146221C2A3A556C00919DCC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E29D7F862A3CC89F0006C9E1 /* PaymentViewControllerTests.swift in Sources */,
+				414622252A3A556C00919DCC /* PaymentTextFieldTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		414622262A3A556C00919DCC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4146222F2A3A556C00919DCC /* MobilisePaymentUITests.swift in Sources */,
+				414622312A3A556C00919DCC /* MobilisePaymentUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		414622222A3A556C00919DCC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 414622092A3A556B00919DCC /* MobilisePayment */;
+			targetProxy = 414622212A3A556C00919DCC /* PBXContainerItemProxy */;
+		};
+		4146222C2A3A556C00919DCC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 414622092A3A556B00919DCC /* MobilisePayment */;
+			targetProxy = 4146222B2A3A556C00919DCC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		414622132A3A556B00919DCC /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				414622142A3A556B00919DCC /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		414622182A3A556C00919DCC /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				414622192A3A556C00919DCC /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		414622322A3A556C00919DCC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		414622332A3A556C00919DCC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		414622352A3A556C00919DCC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 6K8BWF3CZ2;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MobilisePayment/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Mousa.MobilisePayment;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		414622362A3A556C00919DCC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 6K8BWF3CZ2;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MobilisePayment/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Mousa.MobilisePayment;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		414622382A3A556C00919DCC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 6K8BWF3CZ2;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Mousa.MobilisePaymentTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MobilisePayment.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/MobilisePayment";
+			};
+			name = Debug;
+		};
+		414622392A3A556C00919DCC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 6K8BWF3CZ2;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Mousa.MobilisePaymentTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MobilisePayment.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/MobilisePayment";
+			};
+			name = Release;
+		};
+		4146223B2A3A556C00919DCC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 6K8BWF3CZ2;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Mousa.MobilisePaymentUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = MobilisePayment;
+			};
+			name = Debug;
+		};
+		4146223C2A3A556C00919DCC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 6K8BWF3CZ2;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Mousa.MobilisePaymentUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = MobilisePayment;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		414622052A3A556B00919DCC /* Build configuration list for PBXProject "MobilisePayment" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				414622322A3A556C00919DCC /* Debug */,
+				414622332A3A556C00919DCC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		414622342A3A556C00919DCC /* Build configuration list for PBXNativeTarget "MobilisePayment" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				414622352A3A556C00919DCC /* Debug */,
+				414622362A3A556C00919DCC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		414622372A3A556C00919DCC /* Build configuration list for PBXNativeTarget "MobilisePaymentTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				414622382A3A556C00919DCC /* Debug */,
+				414622392A3A556C00919DCC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4146223A2A3A556C00919DCC /* Build configuration list for PBXNativeTarget "MobilisePaymentUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4146223B2A3A556C00919DCC /* Debug */,
+				4146223C2A3A556C00919DCC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		4146223D2A3A55A800919DCC /* XCRemoteSwiftPackageReference "IQKeyboardManager" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/hackiftekhar/IQKeyboardManager.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		4146223E2A3A55A800919DCC /* IQKeyboardManagerSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4146223D2A3A55A800919DCC /* XCRemoteSwiftPackageReference "IQKeyboardManager" */;
+			productName = IQKeyboardManagerSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 414622022A3A556B00919DCC /* Project object */;
+}
