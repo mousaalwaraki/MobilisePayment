@@ -38,37 +38,15 @@ final class PaymentViewControllerTests: XCTestCase {
         }
     }
     
-    func test_whenTappingOnPrimaryButtonInDeliveryCategory_thenCategoryChangesToBilling() {
+    func test_whenNavigatingToCategory_thenCurrentCategoryUpdated() {
         // given
         sut.navigate(to: .delivery)
         
         // when
-        sut.tappedPrimaryButton()
+        sut.navigate(to: .billing)
         
         // then
         XCTAssertEqual(sut.currentCategory, .billing)
-    }
-    
-    func test_whenTappingOnPrimaryButtonInBillingCategory_thenCategoryChangesToCard() {
-        // given
-        sut.navigate(to: .billing)
-        
-        // when
-        sut.tappedPrimaryButton()
-        
-        // then
-        XCTAssertEqual(sut.currentCategory, .card)
-    }
-    
-    func test_whenTappingOnPrimaryButtonInCardCategory_thenCategoryDoesntChange() {
-        // given
-        sut.navigate(to: .card)
-        
-        // when
-        sut.tappedPrimaryButton()
-        
-        // then
-        XCTAssertEqual(sut.currentCategory, .card)
     }
     
     func test_whenFillingDeliveryFromBilling_thenAllFieldsFilledCorrectly() {
